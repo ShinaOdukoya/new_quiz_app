@@ -1,6 +1,5 @@
-// import 'package:flutter/src/widgets/container.dart';
-// import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class StartScreen extends StatelessWidget {
   final Function() startQuiz;
@@ -14,17 +13,21 @@ class StartScreen extends StatelessWidget {
         children: [
           Image.asset(
             'assets/images/quiz-logo.png',
-            width: 300,
+            width: 230,
             //Added transparency to image
             color: const Color.fromARGB(150, 255, 255, 255),
           ),
           const SizedBox(
             height: 80,
           ),
-          const Text(
+          Text(
             'Quiz App',
-            style: TextStyle(
-              color: Colors.white,
+            // style: TextStyle(
+            //   color: Colors.white,
+            //   fontSize: 20,
+            // ),
+            style: GoogleFonts.lato(
+              color: const Color.fromARGB(255, 237, 223, 252),
               fontSize: 20,
             ),
           ),
